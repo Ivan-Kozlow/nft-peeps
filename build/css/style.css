@@ -152,6 +152,7 @@ h6 {
 }
 .header__navigate {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 .header__links {
@@ -160,6 +161,9 @@ h6 {
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
+}
+.header__links + .header__links {
+  margin-top: 15px;
 }
 .header__link {
   color: #000;
@@ -374,6 +378,11 @@ h6 {
   font-size: calc(24px + 12 * ((100vw - 320px) / 1120));
   line-height: 32px;
   margin-bottom: 32px;
+}
+@media (max-width: 678px) {
+  .advantages__item-title {
+    margin-bottom: 17px;
+  }
 }
 .advantages__item-level {
   font-weight: 700;
