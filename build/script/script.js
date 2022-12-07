@@ -13,15 +13,12 @@ spoilerSection.addEventListener("click", function (event) {
 			});
 			spoilerBtn.parentNode.classList.add('active');
 		}
-
 	} else if (spoilerText = event.target.closest('.spoiler__text')) {
 		spoilerText.parentNode.classList.add('active');
-		console.log('click on text');
 		// Закрыть спойлер (Всем элементам массива убирается класс active)
 	} else {
 		arrSpolers.forEach(el => {
 			el.classList.remove('active');
 		});
-		console.log('clear classes');
 	}
 });
