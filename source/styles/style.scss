@@ -406,7 +406,7 @@ $maxWidth: 1440;
 			overflow: visible;
 			width: auto;
 			color: #000;
-			height: 7em;
+			font-size: 0;
 		}
 	}
 
@@ -452,7 +452,7 @@ $maxWidth: 1440;
 		color: #fff;
 		transition: all 0.7s ease 0s;
 		width: 0;
-		height: 0;
+		font-size: 17px;
 		overflow: hidden;
 		transform: translate(0, -40%);
 		font-size: 17px;
